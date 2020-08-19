@@ -1,0 +1,15 @@
+{
+  "namespace": "the new directory to contain all the generated files",
+  "executor_name": "The name of the new executor (UpperCamelCase)",
+  "executor_type": ["Encoder", "Crafter", "Indexer", "Ranker"],
+  "description": "What does this executor do?",
+  "keywords": "Some keywords to describe the executor, separated by commas",
+  "python_requirements": "Python packages required to install, separated by commas",
+  "base_image": "jinaai/jina:devel",
+  "author_name": "Who creates this executor?",
+  "author_url": "https://jina.ai",
+  "author_vendor": "Jina AI Limited",
+  "docs_url": "Where to find more details about this executor?",
+  "version": "0.0.1",
+  "license": "apache-2.0"
+}

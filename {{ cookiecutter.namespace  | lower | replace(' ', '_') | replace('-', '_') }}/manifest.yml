@@ -1,0 +1,11 @@
+manifest_version: 1
+name: {{cookiecutter.executor_name}}
+type: {{cookiecutter.executor_type | lower() }}
+description: {{cookiecutter.description}}
+author: {{cookiecutter.author_name }}
+url: {{cookiecutter.author_url }}
+vendor: {{cookiecutter.author_vendor }}
+documentation: {{cookiecutter.docs_url }}
+version: {{cookiecutter.version }}
+license: {{cookiecutter.license }}
+keywords: [{{cookiecutter.keywords }}]
