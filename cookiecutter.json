@@ -6,10 +6,10 @@
   "keywords": "Some keywords to describe the executor, separated by commas",
   "python_requirements": "Python packages required to install, separated by commas",
   "base_image": "jinaai/jina:devel",
-  "author_name": "Who creates this executor?",
+  "author_name": "Jina AI Dev-Team (dev-team@jina.ai)",
   "author_url": "https://jina.ai",
   "author_vendor": "Jina AI Limited",
-  "docs_url": "Where to find more details about this executor?",
+  "docs_url": "https://github.com/jina-ai/jina-hub",
   "version": "0.0.1",
   "license": "apache-2.0"
 }
