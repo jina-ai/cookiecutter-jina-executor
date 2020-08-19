@@ -1,5 +1,4 @@
 {
-  "namespace": "the new directory to contain all the generated files",
   "executor_name": "The name of the new executor (UpperCamelCase)",
   "executor_type": ["Encoder", "Crafter", "Indexer", "Ranker"],
   "description": "What does this executor do?",
