@@ -1,9 +1,9 @@
 {
-  "executor_name": "The name of the new executor (UpperCamelCase)",
+  "executor_name": "The class name of the executor (UpperCamelCase)",
   "executor_type": ["Encoder", "Crafter", "Indexer", "Ranker"],
   "description": "What does this executor do?",
-  "keywords": "Some keywords to describe the executor, separated by commas",
-  "python_requirements": "Python packages required to install, separated by commas",
+  "keywords": "keywords to describe the executor, separated by commas",
+  "pip_requirements": "",
   "base_image": "jinaai/jina:devel",
   "author_name": "Jina AI Dev-Team (dev-team@jina.ai)",
   "author_url": "https://jina.ai",

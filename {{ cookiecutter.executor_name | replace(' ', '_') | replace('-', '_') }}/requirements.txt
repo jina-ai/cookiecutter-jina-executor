@@ -1,1 +1,1 @@
-{{cookiecutter.python_requirements | replace(',', '\n')}}
+{{cookiecutter.pip_requirements | replace(',', '\n')}}
