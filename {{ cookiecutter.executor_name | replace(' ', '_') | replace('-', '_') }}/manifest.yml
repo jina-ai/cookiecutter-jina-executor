@@ -1,6 +1,6 @@
 manifest_version: 1
 name: {{cookiecutter.executor_name}}
-category: {{cookiecutter.executor_type | lower() }}
+kind: {{cookiecutter.executor_type | lower() }}
 description: {{cookiecutter.description}}
 author: {{cookiecutter.author_name }}
 url: {{cookiecutter.author_url }}
