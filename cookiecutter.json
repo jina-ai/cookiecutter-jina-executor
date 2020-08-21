@@ -4,7 +4,7 @@
   "description": "What does this executor do?",
   "keywords": "keywords to describe the executor, separated by commas",
   "pip_requirements": "",
-  "base_image": "jinaai/jina:devel",
+  "base_image": "jinaai/jina",
   "author_name": "Jina AI Dev-Team (dev-team@jina.ai)",
   "author_url": "https://jina.ai",
   "author_vendor": "Jina AI Limited",
