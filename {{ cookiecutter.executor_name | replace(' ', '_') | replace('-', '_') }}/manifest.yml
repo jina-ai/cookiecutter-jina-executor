@@ -1,7 +1,9 @@
 manifest_version: 1
 name: {{cookiecutter.executor_name}}
 kind: {{cookiecutter.executor_type | lower }}
-description: {{cookiecutter.description}}
+description:
+  |
+  {{cookiecutter.description | replace('\n', ' ') }}
 author: {{cookiecutter.author_name }}
 url: {{cookiecutter.author_url }}
 vendor: {{cookiecutter.author_vendor }}
