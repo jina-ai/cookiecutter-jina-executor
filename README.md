@@ -6,6 +6,15 @@ Cookiecutter template for a Jina Hub Executor
 
 ## Quick start
 
+### Use with Jina
+
+```bash
+pip install jina[devel]
+jina hub new
+```
+
+### Use without Jina
+
 Install the latest Cookiecutter if you haven't installed it yet (this requires
 Cookiecutter 1.4.0 or higher)::
 
