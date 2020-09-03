@@ -1,3 +1,7 @@
 !{{cookiecutter.executor_name}}
 with:
   {}
+metas:
+  py_modules: 
+    - splitter.py
+    # - You can put more dependencies here
