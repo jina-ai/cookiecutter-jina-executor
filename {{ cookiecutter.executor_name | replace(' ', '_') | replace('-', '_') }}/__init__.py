@@ -33,4 +33,9 @@ class {{cookiecutter.executor_name | replace(' ', '_') | replace('-', '_') }}(Ba
     def rank(self, *args, **kwargs):
         raise NotImplementedError
 
+    {% elif cookiecutter.executor_type == 'Evaluator' %}
+
+    def evaluate(self, *args, **kwargs):
+        raise NotImplementedError
+
     {% endif %}
