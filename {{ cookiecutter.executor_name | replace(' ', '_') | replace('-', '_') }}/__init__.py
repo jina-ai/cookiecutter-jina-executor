@@ -30,7 +30,7 @@ class {{cookiecutter.executor_name | replace(' ', '_') | replace('-', '_') }}(Ba
 
     {% elif cookiecutter.executor_type == 'Ranker' %}
 
-    def rank(self, *args, **kwargs):
+    def score(self, *args, **kwargs):
         raise NotImplementedError
 
     {% elif cookiecutter.executor_type == 'Evaluator' %}
