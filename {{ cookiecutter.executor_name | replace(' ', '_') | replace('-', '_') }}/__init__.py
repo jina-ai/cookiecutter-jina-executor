@@ -38,4 +38,9 @@ class {{cookiecutter.executor_name | replace(' ', '_') | replace('-', '_') }}(Ba
     def evaluate(self, *args, **kwargs):
         raise NotImplementedError
 
+    {% elif cookiecutter.executor_type == 'Segmenter' %}
+
+    def segment(self, *args, **kwargs):
+        raise NotImplementedError
+
     {% endif %}
