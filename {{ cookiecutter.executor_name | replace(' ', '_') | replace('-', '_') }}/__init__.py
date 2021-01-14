@@ -43,4 +43,9 @@ class {{cookiecutter.executor_name | replace(' ', '_') | replace('-', '_') }}(Ba
     def segment(self, *args, **kwargs):
         raise NotImplementedError
 
+    {% elif cookiecutter.executor_type == 'Classifier' %}
+
+    def predict(self, *args, **kwargs):
+        raise NotImplementedError
+
     {% endif %}

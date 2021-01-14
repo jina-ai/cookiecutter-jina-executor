@@ -1,6 +1,6 @@
 {
   "executor_name": "The class name of the executor (UpperCamelCase)",
-  "executor_type": ["Encoder", "Crafter", "Indexer", "Ranker", "Evaluator", "Segmenter"],
+  "executor_type": ["Encoder", "Crafter", "Indexer", "Ranker", "Evaluator", "Segmenter", "Classifier"],
   "description": "What does this executor do?",
   "keywords": "keywords to describe the executor, separated by commas",
   "pip_requirements": "",
