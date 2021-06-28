@@ -1,15 +1,14 @@
-FROM {{ cookiecutter.base_image }} AS base
+FROM {{cookiecutter.base_image}}
+
+# install git
+RUN apt-get -y update && apt-get install -y git
+
+# install requirements before copying the workspace
+COPY requirements.txt /requirements.txt
+RUN pip install -r requirements.txt
 
 # setup the workspace
 COPY . /workspace
 WORKDIR /workspace
 
-# install the third-party requirements
-RUN pip install -r requirements.txt
-
-# for testing the image
-FROM base
-RUN pip install pytest && pytest
-
-FROM base
-ENTRYPOINT ["jina", "pod", "--uses", "config.yml"]
+ENTRYPOINT ["jina", "executor", "--uses", "config.yml"]

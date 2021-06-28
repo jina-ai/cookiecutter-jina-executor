@@ -1,51 +1,29 @@
-from jina.executors.{{cookiecutter.executor_type | lower}}s import Base{{cookiecutter.executor_type}}
+__copyright__ = "Copyright (c) 2020-2021 Jina AI Limited. All rights reserved."
+__license__ = "Apache-2.0"
 
-class {{cookiecutter.executor_name | replace(' ', '_') | replace('-', '_') }}(Base{{cookiecutter.executor_type}}):
+from typing import Optional, Dict
+
+from jina import Executor, DocumentArray, requests
+
+
+class {{cookiecutter.executor_name}}(Executor):
     """
-    :class:`{{cookiecutter.executor_name}}` {{cookiecutter.description}}.
+    {{ cookiecutter.description }}
+
+    :param your_param: param description
     """
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, param: int = 128, *args, **kwargs ):
         super().__init__(*args, **kwargs)
-        # your customized __init__ below
-        raise NotImplementedError
+        self._param = param
 
-    {% if cookiecutter.executor_type == 'Crafter' %}
+    @requests(on='/endpoint')
+    def do_stuff(self, docs: Optional[DocumentArray], parameters: Dict, **kwargs):
+        """
+        Do stuff
 
-    def craft(self, *args, **kwargs):
-        raise NotImplementedError
-
-    {% elif cookiecutter.executor_type == 'Encoder' %}
-
-    def encode(self, data, *args, **kwargs):
-        raise NotImplementedError
-
-    {% elif cookiecutter.executor_type == 'Indexer' %}
-
-    def query(self, keys, *args, **kwargs):
-        raise NotImplementedError
-
-    def add(self, keys, vectors, *args, **kwargs):
-        raise NotImplementedError
-
-    {% elif cookiecutter.executor_type == 'Ranker' %}
-
-    def score(self, *args, **kwargs):
-        raise NotImplementedError
-
-    {% elif cookiecutter.executor_type == 'Evaluator' %}
-
-    def evaluate(self, *args, **kwargs):
-        raise NotImplementedError
-
-    {% elif cookiecutter.executor_type == 'Segmenter' %}
-
-    def segment(self, *args, **kwargs):
-        raise NotImplementedError
-
-    {% elif cookiecutter.executor_type == 'Classifier' %}
-
-    def predict(self, *args, **kwargs):
-        raise NotImplementedError
-
-    {% endif %}
+        :param docs: documents sent to the Executor
+        :param parameters: the parameters to this request
+        """
+        # do things
+        pass

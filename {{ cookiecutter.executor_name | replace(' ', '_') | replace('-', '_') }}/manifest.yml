@@ -1,14 +1,9 @@
 manifest_version: 1
 name: {{cookiecutter.executor_name}}
-kind: {{cookiecutter.executor_type | lower }}
-description:
-  |
-  {{cookiecutter.description | replace('\n', ' ') }}
-author: {{cookiecutter.author_name }}
-url: {{cookiecutter.author_url }}
-vendor: {{cookiecutter.author_vendor }}
-documentation: {{cookiecutter.docs_url }}
-version: {{cookiecutter.version }}
-license: {{cookiecutter.license }}
-keywords: [{{cookiecutter.keywords }}]
-type: pod
+alias: {{cookiecutter.executor_name}}
+description: {{cookiecutter.description}}
+author: {{cookiecutter.author}}
+url: {{cookiecutter.url}}
+avatar:  {{cookiecutter.avatar}}
+keywords: {{cookiecutter.keywords}}
+version: {{cookiecutter.version}}

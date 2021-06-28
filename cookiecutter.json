@@ -1,14 +1,12 @@
 {
-  "executor_name": "The class name of the executor (UpperCamelCase)",
-  "executor_type": ["Encoder", "Crafter", "Indexer", "Ranker", "Evaluator", "Segmenter", "Classifier"],
+  "executor_name": "The class name of the Executor (UpperCamelCase)",
+  "alias": "an alias for your Executor",
   "description": "What does this executor do?",
-  "keywords": "keywords to describe the executor, separated by commas",
   "pip_requirements": "",
-  "base_image": "jinaai/jina",
-  "author_name": "Jina AI Dev-Team (dev-team@jina.ai)",
-  "author_url": "https://jina.ai",
-  "author_vendor": "Jina AI Limited",
-  "docs_url": "https://github.com/jina-ai/jina-hub",
-  "version": "0.0.1",
-  "license": "apache-2.0"
+  "base_image": "jinaai/jina:2.0.0rc10",
+  "author": "Jina AI Dev-Team (dev-team@jina.ai)",
+  "url": "https://jina.ai",
+  "avatar": "",
+  "keywords": "keywords to describe the executor, separated by commas",
+  "version": "0.0.1"
 }
