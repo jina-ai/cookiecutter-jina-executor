@@ -1,6 +1,6 @@
 {
   "executor_name": "The class name of the Executor (UpperCamelCase)",
-  "alias": "The alias for easy of memory. Only Alphanumerics [0-9a-zA-Z], and -._~ are allowed. The maximal length is 128 characters",
+  "alias": "The alias for easy of memory. Only Alphanumerics and -._ [0-9a-zA-Z-._] are allowed. The maximal length is 128 characters",
   "description": "What does this executor do?",
   "base_image": "jinaai/jina:2.0.0rc11",
   "author": "Jina AI contributor",
