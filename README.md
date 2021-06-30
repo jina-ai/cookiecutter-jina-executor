@@ -2,21 +2,12 @@
 
 [![Jina](https://github.com/jina-ai/jina/blob/master/.github/badges/jina-badge.svg?raw=true  "We fully commit to open-source")](https://get.jina.ai)
 
-Cookiecutter template for a Jina Hub Executor
+Cookiecutter template for a Jina Executor
 
 ## Quick start
 
-### Use with Jina
-
-```bash
-pip install jina[devel]
-jina hub new
-```
-
-### Use without Jina
-
 Install the latest Cookiecutter if you haven't installed it yet (this requires
-Cookiecutter 1.4.0 or higher)::
+Cookiecutter 1.7.3 or higher)::
 
 ```bash
 pip install -U cookiecutter
@@ -37,5 +28,5 @@ be a fork.
 * Once you have your own version working, add it to the Similar Cookiecutter
   Templates list above with a brief description.
 
-* It's up to you whether or not to rename your fork/own version. Do whatever
+* It's up to you whether or not you rename your fork/own version. Do whatever
   you think sounds good.
