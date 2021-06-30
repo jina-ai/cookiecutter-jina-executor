@@ -5,5 +5,4 @@ description: {{cookiecutter.description}}
 author: {{cookiecutter.author}}
 url: {{cookiecutter.url}}
 avatar:  {{cookiecutter.avatar}}
-keywords: {{cookiecutter.keywords}}
 version: {{cookiecutter.version}}

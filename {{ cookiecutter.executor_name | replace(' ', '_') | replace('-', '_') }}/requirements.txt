@@ -1,2 +1,1 @@
-jina==2.0.0rc10
-{{cookiecutter.pip_requirements | replace(', ', '\n') | replace(',', '\n')}}
+

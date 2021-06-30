@@ -1,6 +1,4 @@
 jtype: {{cookiecutter.executor_name}}
-with:
-  param: 128  # change this
 metas:
   py_modules:
     - __init__.py

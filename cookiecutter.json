@@ -1,12 +1,10 @@
 {
   "executor_name": "The class name of the Executor (UpperCamelCase)",
-  "alias": "an alias for your Executor",
+  "alias": "The alias for easy of memory. Only Alphanumerics and -._ [0-9a-zA-Z-._] are allowed. The maximal length is 128 characters",
   "description": "What does this executor do?",
-  "pip_requirements": "",
-  "base_image": "jinaai/jina:2.0.0rc10",
-  "author": "Jina AI Dev-Team (dev-team@jina.ai)",
+  "base_image": "jinaai/jina:2.0.0rc11",
+  "author": "Jina AI contributor",
   "url": "https://jina.ai",
-  "avatar": "",
-  "keywords": "keywords to describe the executor, separated by commas",
-  "version": "0.0.1"
+  "version": "1",
+  "avatar": ""
 }
